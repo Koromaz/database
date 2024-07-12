@@ -36,7 +36,7 @@ create table if not exists Track (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(60) not null,
 	duration INTEGER NOT NULL CHECK (duration > 60),
-    album_id INTEGER NOT NULL REFERENCES Album(id)
+        album_id INTEGER NOT NULL REFERENCES Album(id)
 );
 
 
